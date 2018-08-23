@@ -18,11 +18,14 @@ function entrar(){
 document.querySelector("button").onclick = entrar;
 
 function logar(){
-    console.log(this.innerHTML); // this vai ser referente ao usuario. This seria "eu"
+    console.log(this); // this vai ser referente a tag span
+    console.log(this.innerHTML); // this vai ser referente ao nome usuario. This seria "eu"
 }
 
 document.querySelector("#usuario").onmouseenter = logar; // this é referente ao usuario
 
-for (let link of document.querySelectorAll("nav a")){
-    link.onmouseenter = logar; // this é referente aos links
-}
+// for (let link of document.querySelectorAll("nav a")){
+//     link.onmouseenter = logar; // this é referente aos links
+// }
+
+console.log(this); // vai mostrar o global window
