@@ -21,8 +21,8 @@ function logar(){
     console.log(this.innerHTML); // this vai ser referente ao usuario. This seria "eu"
 }
 
-document.querySelector("#usuario").onmouseenter = logar;
+document.querySelector("#usuario").onmouseenter = logar; // this é referente ao usuario
 
 for (let link of document.querySelectorAll("nav a")){
-    link.onmouseenter = logar;
+    link.onmouseenter = logar; // this é referente aos links
 }
