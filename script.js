@@ -5,7 +5,7 @@
 function entrar(){
 
     let nome = document.querySelector("input").value; // pega o valor digitado no input
-    if(nome.trim) { // se a pessoa digitou algo, o nome é true, entao executa o negocio
+    if(nome.trim()) { // se a pessoa digitou algo, o nome é true, entao executa o negocio
                     // trim faz com que o começo e o final sejam removidos se forem espaço
                     // se tudo for espaço, nao entra.
         document.querySelector("#usuario").innerHTML = nome;
