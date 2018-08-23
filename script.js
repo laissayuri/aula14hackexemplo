@@ -22,3 +22,7 @@ function logar(){
 }
 
 document.querySelector("#usuario").onmouseenter = logar;
+
+for (let link of document.querySelectorAll("nav a")){
+    link.onmouseenter = logar;
+}
